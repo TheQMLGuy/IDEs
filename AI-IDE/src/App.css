@@ -1,0 +1,82 @@
+:root {
+  --bg-primary: #0f1117;
+  --bg-secondary: #1a1d26;
+  --bg-tertiary: #242834;
+  --accent-primary: #3b82f6;
+  /* Blue-500 */
+  --accent-secondary: #60a5fa;
+  /* Blue-400 */
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --border-color: #2e323e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-color);
+}
+
+/* PyCharm-style Terminal */
+.xterm {
+  padding: 0 12px;
+}
+
+.xterm-viewport {
+  background: #1e1f22 !important;
+}
+
+.xterm-viewport::-webkit-scrollbar {
+  width: 10px;
+}
+
+.xterm-viewport::-webkit-scrollbar-track {
+  background: #1e1f22;
+}
+
+.xterm-viewport::-webkit-scrollbar-thumb {
+  background: #4a4d52;
+  border-radius: 5px;
+}
